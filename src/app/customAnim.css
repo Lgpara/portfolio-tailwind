@@ -1,0 +1,36 @@
+/* nav chevron */
+
+.customAnim-navChevron {
+    overflow: hidden;
+    width: 0;
+    opacity: 0;
+
+}
+.customAnim-navChevronOpen {
+    animation: navChevronAnim 0.25s ease-in-out forwards, navChevronDynamic 1s ease-in-out infinite;
+}
+@keyframes navChevronAnim {
+    0% {
+        width: 0px;
+        opacity: 0;
+    }
+    20% {
+        width: 20px;
+        opacity: 0;
+    }
+    100% {
+        width: 20px;
+        opacity: 1;
+    }
+}
+@keyframes navChevronDynamic {
+    0%{
+        transform: translateX(-3px);
+    }
+    50%{
+        transform: translateX(3px);
+    }
+    100%{
+        transform: translateX(-3px)
+    }
+}
