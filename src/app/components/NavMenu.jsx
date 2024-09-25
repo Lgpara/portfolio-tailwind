@@ -5,7 +5,7 @@ import { useState } from "react";
 import { cn } from "../utils";
 
 
-export default function NavMenu() {
+export default function NavMenu({transitionState, setTransitionState}) {
   const navElement = ["Projects", "Stacks","About me", "Contact"];
   const [selectedNavElement, setSelectedNavElement] = useState(0);
   const handleKeyPress = (e) => {
@@ -25,16 +25,20 @@ export default function NavMenu() {
       return
     }
   }
+  const handleLinkClick = () => {
+    setTransitionState(!transitionState)
+  }
   return (
     <div onKeyDown={(e)=>handleKeyPress(e)} className="h-full w-full bg-zinc-100 flex items-center justify-center">
-      <nav className=" flex gap-5 flex-col customAnim-navMenu">
+      <nav className={cn("flex gap-5 flex-col customAnim-navMenu", transitionState && "customAnim-navMenuClose") }>
         {navElement.map((element, index) => (
-          <a key={"nav element " + index} href={"/"} onMouseOver={()=>setSelectedNavElement(index)} className=" flex items-center gap-4 cursor-pointer ">
-            <span className={cn("material-symbols-outlined text-zinc-900 customAnim-navChevron", index === selectedNavElement && "customAnim-navChevronOpen")}>double_arrow</span>
-            <div className=" text-8xl text-zinc-900 font-sans antialiased">{element}</div>
-          </a>
+          <div onClick={()=>{handleLinkClick()}} key={"nav element " + index} onMouseOver={()=>setSelectedNavElement(index)} className=" flex items-center gap-4 cursor-pointer relative">
+            <span className={cn("absolute material-symbols-outlined text-zinc-900 customAnim-navChevron", index === selectedNavElement && "customAnim-navChevronOpen")}>double_arrow</span>
+            <div className={cn("text-8xl text-zinc-900 font-sans antialiased transition-all", index === selectedNavElement && "scale-105 custom-text-shadow-navElement")}>{element}</div>
+          </div>
         ))}
       </nav>
     </div>
   );
 }
+

@@ -1,4 +1,7 @@
 /* nav chevron */
+:root {
+    --customBlack: #18181b1f; 
+}
 
 .customAnim-navChevron {
     overflow: hidden;
@@ -25,14 +28,17 @@
 }
 @keyframes navChevronDynamic {
     0%{
-        transform: translateX(-3px);
+        transform: translateX(-47px);
     }
     50%{
-        transform: translateX(3px);
+        transform: translateX(-40px);
     }
     100%{
-        transform: translateX(-3px)
+        transform: translateX(-47px)
     }
+}
+.custom-text-shadow-navElement {
+    text-shadow: 5px 5px 4px var(--customBlack);
 }
 
 
@@ -54,5 +60,20 @@
         opacity: 1;
         filter: blur(0);
         scale: 1;
+    }
+}
+
+.customAnim-navMenuClose {
+    animation: navMenuAnimClose 0.5s ease forwards 0.15s;
+}
+
+@keyframes navMenuAnimClose {
+    0% {
+        scale: 1;
+        opacity: 1;
+    }
+    100% {
+        scale: 0.9;
+        opacity: 0;
     }
 }
