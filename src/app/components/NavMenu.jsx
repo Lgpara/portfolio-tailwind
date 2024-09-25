@@ -27,7 +27,7 @@ export default function NavMenu() {
   }
   return (
     <div onKeyDown={(e)=>handleKeyPress(e)} className="h-full w-full bg-zinc-100 flex items-center justify-center">
-      <nav className=" flex gap-5 flex-col">
+      <nav className=" flex gap-5 flex-col customAnim-navMenu">
         {navElement.map((element, index) => (
           <a key={"nav element " + index} href={"/"} onMouseOver={()=>setSelectedNavElement(index)} className=" flex items-center gap-4 cursor-pointer ">
             <span className={cn("material-symbols-outlined text-zinc-900 customAnim-navChevron", index === selectedNavElement && "customAnim-navChevronOpen")}>double_arrow</span>

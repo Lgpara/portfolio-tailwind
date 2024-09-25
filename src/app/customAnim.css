@@ -34,3 +34,25 @@
         transform: translateX(-3px)
     }
 }
+
+
+/* Navmenu */
+
+.customAnim-navMenu {
+    animation: navMenuAnim 0.5s ease forwards;
+}
+
+@keyframes navMenuAnim {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+        filter: blur(4px);
+        scale: 0.8;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+        filter: blur(0);
+        scale: 1;
+    }
+}
