@@ -30,9 +30,9 @@ export function HomeElement({ children, position, transitionState }) {
   return (
     <div
       className={cn(
-        "flex-1 h-screen bg-black flex justify-center items-center transition-all",
+        "flex-1 h-screen bg-zinc-900 flex justify-center items-center transition-all",
         transitionState && position === "right" && "",
-        transitionState && position === "left" && "flex-grow-0"
+        transitionState && position === "left" && "flex-grow-0 w-0 overflow-hidden"
       )}
     >
       {children}
