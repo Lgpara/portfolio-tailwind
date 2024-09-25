@@ -1,5 +1,6 @@
 import NavMenu from "./components/NavMenu";
-import Head from "next/head";
+import SocialLinks from "./components/SocialLinks"
+
 
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <HomeElement>
         <NavMenu />
       </HomeElement>
+      <SocialLinks />
    </main>
   );
 }
