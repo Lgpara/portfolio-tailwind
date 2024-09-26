@@ -77,3 +77,15 @@
         opacity: 0;
     }
 }
+
+.custom-backBtnAnim {
+    animation: backBtnAnim 0.3s ease forwards;
+}
+@keyframes backBtnAnim {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

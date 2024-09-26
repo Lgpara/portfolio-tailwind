@@ -3,9 +3,10 @@
 
 import { useState } from "react";
 import { cn } from "../utils";
-
+import { useRouter } from "next/navigation";
 
 export default function NavMenu({transitionState, setTransitionState}) {
+  const router = useRouter()
   const navElement = ["Projects", "Stacks","About me", "Contact"];
   const [selectedNavElement, setSelectedNavElement] = useState(0);
   const handleKeyPress = (e) => {
@@ -27,6 +28,9 @@ export default function NavMenu({transitionState, setTransitionState}) {
   }
   const handleLinkClick = () => {
     setTransitionState(!transitionState)
+    setTimeout(()=>{
+      router.push("/test")
+    },650)
   }
   return (
     <div onKeyDown={(e)=>handleKeyPress(e)} className="h-full w-full bg-zinc-100 flex items-center justify-center">
