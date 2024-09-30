@@ -2,6 +2,10 @@ import PageContainer from "../../components/PageContainer";
 
 export default function Projects(){
     return(
-        <PageContainer />
+        <PageContainer>
+            <div>
+                
+            </div>
+        </PageContainer>
     )
 }
