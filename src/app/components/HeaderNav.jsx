@@ -25,7 +25,8 @@ export default function HeaderNav() {
           className={cn(
             " h-full flex items-center text-zinc-50 text-xl cursor-pointer pl-6 pr-6 rounded-3xl transition-all",
             pathname === element.route && "bg-zinc-100 text-zinc-900",
-            pathname !== element.route && "hover:bg-zinc-700"
+            pathname !== element.route && "hover:bg-zinc-700",
+            index === navElement.length - 1 && "mr-[-3px]"
           )}
         >
           {element.name}
