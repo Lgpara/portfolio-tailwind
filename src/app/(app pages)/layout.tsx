@@ -13,7 +13,7 @@ export default function PagesLayout({
           <BackBtn />
           <HeaderNav />
         </header>
-        <div className="w-4/5 border-solid border-2 border-black h-[2000px]">
+        <div className="w-4/5 border-solid bg-zinc-300 h-[2000px]">
             {children}
         </div>
         {/* <BackBtn />
