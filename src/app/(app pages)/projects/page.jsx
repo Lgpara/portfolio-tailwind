@@ -1,11 +1,13 @@
-import PageContainer from "../../components/PageContainer";
+import PageTitle from "../../components/PageTitle"
+import data from "../../appdata.json"
 
 export default function Projects(){
     return(
-        <PageContainer>
-            <div>
-                
-            </div>
-        </PageContainer>
+        <>
+            <PageTitle title={"Placeholder"} />
+
+            <PageTitle title={"Placeholder"} />
+            <PageTitle title={"Placeholder"} />
+        </>
     )
 }

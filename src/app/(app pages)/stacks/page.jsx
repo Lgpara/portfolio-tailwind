@@ -1,4 +1,5 @@
 import Image from "next/image"
+import PageTitle from "../../components/PageTitle"
 
 export default function Stacks(){
     const stacks = {
@@ -18,11 +19,20 @@ export default function Stacks(){
         ],
     }
     return(
-        <div>
-            {stacks.current.map((element, index)=>(
-                <StackBlock key={"stack element " + index} image={element.image} name={element.name} />
-            ))}
-        </div>
+        <>
+            <PageTitle title={"Placeholder"} />
+            <div>
+                {stacks.current.map((element, index)=>(
+                    <StackBlock key={"stack element " + index} image={element.image} name={element.name} />
+                ))}
+            </div>
+            <PageTitle title={"Placeholder"} />
+            <div>
+                {stacks.learning.map((element, index)=>{
+                    <StackBlock key={"stack element " + index} image={element.image} name={element.name} />
+                })}
+            </div>
+        </>
     )
 }
 
@@ -36,3 +46,4 @@ export function StackBlock({image, name}){
         </div>
     )
 }
+
