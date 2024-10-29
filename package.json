@@ -16,6 +16,7 @@
     "tailwind-merge": "^2.5.2"
   },
   "devDependencies": {
+    "@types/node": "22.8.2",
     "@types/react": "18.3.8",
     "eslint": "^8",
     "eslint-config-next": "14.2.13",

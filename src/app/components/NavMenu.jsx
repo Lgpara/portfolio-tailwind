@@ -38,7 +38,7 @@ export default function NavMenu({transitionState, setTransitionState}) {
         {navElement.map((element, index) => (
           <div onClick={()=>{handleLinkClick(element)}} key={"nav element " + index} onMouseOver={()=>setSelectedNavElement(index)} className=" flex items-center gap-4 cursor-pointer relative">
             <span className={cn("absolute material-symbols-outlined text-zinc-900 customAnim-navChevron", index === selectedNavElement && "customAnim-navChevronOpen")}>double_arrow</span>
-            <div className={cn("text-8xl text-zinc-900 font-sans antialiased transition-all", index === selectedNavElement && "scale-105 custom-text-shadow-navElement")}>{element}</div>
+            <div className={cn(" uppercase text-8xl text-zinc-900 font-sans antialiased transition-all", index === selectedNavElement && "custom-hoverNavElementAnim scale-105 custom-text-shadow-navElement")}>{element}</div>
           </div>
         ))}
       </nav>

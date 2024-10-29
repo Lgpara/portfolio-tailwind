@@ -89,3 +89,26 @@
         opacity: 1;
     }
 }
+
+
+.custom-hoverNavElementAnim {
+    animation: hoverNavElementAnim 0.35s ease-in-out forwards;
+}
+
+@keyframes hoverNavElementAnim {
+    0% {
+        transform: translateX(0);
+    }
+    40% {
+        transform: translateX(7px);
+    }
+    70% {
+        transform: translateX(-2px);
+    }
+    90% {
+        transform: translateX(1px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
