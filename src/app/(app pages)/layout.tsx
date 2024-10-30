@@ -13,11 +13,9 @@ export default function PagesLayout({
           <BackBtn />
           <HeaderNav />
         </header>
-        <div className="w-4/5 border-solid bg-zinc-300 h-[2000px]">
+        <div className="w-4/5 py-24">
             {children}
         </div>
-        {/* <BackBtn />
-        <SocialLinks /> */}
       </main>
     )
   }
