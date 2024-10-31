@@ -8,7 +8,11 @@
                     "name" : "test",
                     "stacks" : ["HTML", "JavaScript"],
                     "description" : "Description",
-                    "images" : []
+                    "images" : ["/images/projects/test/i1.png", "/images/projects/test/i2.png", "/images/projects/test/i3.png"],
+                    "projectLink" : {
+                        "github" : "https://www.youtube.com/",
+                        "website" : "https://www.youtube.com/"
+                    }
                 },
                 {
                     "name" : "test",
