@@ -13,26 +13,6 @@ export default function Projects() {
   const test = [1, 2, 3];
   const projectCluster = data.projectCluster;
   return (
-    // <>
-    //   <PageTitle title={"Placeholder"} />
-    //   <ProjectBlocContainer>
-    //     {test.map((element, index) => (
-    //       <ProjectBloc projectData={element} key={index} />
-    //     ))}
-    //   </ProjectBlocContainer>
-    //   <PageTitle title={"Placeholder"} />
-    //   <ProjectBlocContainer>
-    //     {test.map((element, index) => (
-    //       <ProjectBloc projectData={element} key={index} />
-    //     ))}
-    //   </ProjectBlocContainer>
-    //   <PageTitle title={"Placeholder"} />
-    //   <ProjectBlocContainer>
-    //     {test.map((element, index) => (
-    //       <ProjectBloc projectData={element} key={index} />
-    //     ))}
-    //   </ProjectBlocContainer>
-    // </>
     <div className="flex flex-col gap-40">
       {projectCluster.map((element, index) => (
         <ProjectSection

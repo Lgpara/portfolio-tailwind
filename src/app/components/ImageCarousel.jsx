@@ -30,10 +30,10 @@ export default function ImageCarousel({imagesArray}){
                 <div className="px-2" onClick={()=>{handleCarouselNavBtnClick("right")}}>right</div> */}
                 <Image height={80} width={80} className="px-2 cursor-pointer" onClick={()=>{handleCarouselNavBtnClick("left")}} src={chevronLeftIcon} />
                 <Image height={80} width={80} className="px-2 cursor-pointer" onClick={()=>{handleCarouselNavBtnClick("right")}} src={chevronRightIcon} />
-                <div className="absolute left-3 text-3xl z-40 text-white">{carouselPosition}</div>
+
             </div>
             <Image src={imagesArray[carouselPosition]} height={940} width={1900} />
-            <div className="absolute left-3 text-3xl z-40 text-white">{carouselPosition}</div>
+
         </div>
     )
 }

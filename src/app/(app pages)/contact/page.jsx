@@ -31,7 +31,8 @@ export function MailBtn(){
                 <div className={cn(" cursor-pointer text-5xl flex gap-5 py-4 bg-zinc-100", btnColorGreen && "bg-green-300")}>
                     <div className="ml-8">louisgerber004@gmail.com</div>
                     {/* <Image height={50} width={50} src={copyIcon} className="mr-8" /> */}
-                    <img src={copyIcon} className="" alt="" />
+                    <img src={copyIcon} 
+                    className="" alt="" />
                 </div>
                 <div className={cn("bg-red-400 flex-nowrap w-0 h-full rounded-full absolute top-0 left-0 cursor-pointer text-5xl flex gap-5 py-4 testTransition", hoverState && "w-full", btnColorGreen && "bg-green-300")}>
                     <div className="ml-8">louisgerber004@gmail.com</div>
@@ -39,6 +40,15 @@ export function MailBtn(){
                 </div>
             </div>
             <div>Click to copy</div>
+        </div>
+    )
+}
+
+export function ContactSocialLink(){
+    return(
+        <div>
+            <link rel="stylesheet" href="" />
+            <link rel="stylesheet" href="" />
         </div>
     )
 }

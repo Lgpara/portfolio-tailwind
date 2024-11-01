@@ -1,8 +1,9 @@
 export default function PageTitle({ title }) {
   return (
-    <div className=" flex flex-col gap-3 w-[fit-content]">
-      <div className="text-4xl text-zinc-900">{title}</div>
-      <div className="h-4 w-1/2"></div>
+    <div className="font-sans justify-between items-center flex gap-3 w-full">
+      <div className="w-1/5 bg-zinc-900 h-6"></div>
+      <div className="text-5xl">{title}</div>
+      <div className="h-6 w-1/2 bg-zinc-900"></div>
     </div>
   );
 }

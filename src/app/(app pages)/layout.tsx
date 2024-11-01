@@ -1,6 +1,4 @@
-import SocialLinks from "../components/SocialLinks"
-import BackBtn from "../components/BackBtn"
-import HeaderNav from "../components/HeaderNav"
+import Header from "../components/Header"
 
 export default function PagesLayout({
     children, 
@@ -8,14 +6,13 @@ export default function PagesLayout({
     children: React.ReactNode
   }) {
     return (
-      <main className="bg-zinc-100 min-h-screen flex justify-center"  >
-        <header>
-          <BackBtn />
-          <HeaderNav />
-        </header>
-        <div className="w-4/5 py-24">
-            {children}
-        </div>
-      </main>
+      <>
+        <Header />
+        <main className="bg-zinc-100 min-h-screen flex justify-center"  >
+          <div className="w-4/5 py-24">
+              {children}
+          </div>
+        </main>
+      </>
     )
   }
