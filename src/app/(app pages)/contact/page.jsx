@@ -1,7 +1,6 @@
 "use client"
 import { useState } from "react"
 import copyIcon from "../../images/icons/copy.svg"
-import Image from "next/image"
 import { cn } from "../../utils"
 
 
